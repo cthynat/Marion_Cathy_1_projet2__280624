@@ -9,3 +9,4 @@ Interface responsive adaptée aux ordinateurs, tablettes et mobiles.
 Utilisation de Flexbox pour la mise en page, HTML5 sémantique et CSS3.
 
 
+![Mockup Booki](https://github.com/cthynat/cthynat-Marion_Cathy_1_projet2__280624/blob/main/Mockup%20Booki.png)
