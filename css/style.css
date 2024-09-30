@@ -3,7 +3,7 @@
 ********** General *******************
 *************************************/
 * {
-    font-family: 'Raleway', sans-serif;  
+    font-family: 'Raleway', sans-serif; 
 }
 
 :root {
@@ -31,6 +31,7 @@ main {
 
 .main-container {
     max-width: 1440px;
+    min-width: 320px;
     padding: 0 50px;
     margin:auto;
 }
@@ -235,8 +236,6 @@ header {
     background-color: var(--main-bg-color);
     border-radius: 20px; 
     width: 65%; 
-    display: flex;
-    flex-direction: column;
     padding: 20px;
 }
 
@@ -248,14 +247,17 @@ header {
 
 .card-hebergements {
     display: flex; 
-    flex-wrap: wrap;
-    width: 15vw;
+    flex-direction: column;
     height: 220px;
     margin-bottom: 20px; 
     background-color: white;
     border-radius: 20px;
     padding: 5px;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1)); 
+}
+
+.hebergements-card-container a {
+    width: 30%;
 }
 
 .card-image {
@@ -363,7 +365,7 @@ header {
 
 .card-activites {
     border-radius: 20px;
-    width: 17vw;
+    width: 22%;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     margin-top: 10px;      
     background-color: #fff;
@@ -513,11 +515,11 @@ footer {
     }
 
     h3 {
-        font-size: 0.9em;
+        font-size: 1.1em;
     }
 
     p {
-        font-size: 0.8em;
+        font-size: 1em;
     }
     /**** Header ****/
 
@@ -543,6 +545,11 @@ footer {
     .nav-item {
         width: 100%;
         text-align: center;
+        border-bottom: #D9D9D9 solid 1px;
+    }
+
+    .nav-item:hover {
+        border-bottom: #0065FC solid 1px;
     }
 
     .links a:hover {
@@ -554,7 +561,7 @@ footer {
         content: '';
         display: block;
         width: 0;
-        height: 2px;
+        height: 1px;
         background-color: var(--main-color);
         margin: 0 auto; 
         margin: 10px auto 0 auto;
@@ -675,11 +682,15 @@ footer {
 .hebergements-card-container {
     display: flex;
     flex-direction: column;
-    align-content: center;
+    margin: 5px;
+}
+
+.hebergements-card-container a {
+    width: 100%;
 }
 
 .card-hebergements {
-    width: 85vw;
+    width: 95%;
     height: 205px;
     padding: 5px 5px 10px 5px;
 }
